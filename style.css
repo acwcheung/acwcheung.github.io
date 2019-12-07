@@ -16,6 +16,13 @@ body {
 
 }
 
+h1{
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 20%;
+}
+
 p {
 	color: white;
 	text-align: center;
@@ -26,14 +33,3 @@ p {
 	
 } 
 
-.btn {
-	display: block;
-	margin: auto;
-	margin-top: 220px;
-	
-}
-
-.btn:hover {
-	cursor: pointer;
-	border: solid 5px #0275d8;
-}
