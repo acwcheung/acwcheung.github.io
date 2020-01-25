@@ -1,35 +1,43 @@
-body,
-html {
-  width: 100%;  height: 100%;
-}
-
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Signika Negative', sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  /*set margin to zero to avoid the white edge around*/
   margin: 0;
 }
-
-.big-image {
-	background-image: url("header.jpg");
-	background-size: cover;
-	background-position: center;
-	height: 100%;
-
+.navbar ul {
+	/*remove the default space for ul*/
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+	font-size: 1.1rem;
+	justify-content: flex-start;
+	background: white;
 }
 
-h1{
-	color: white;
-	text-align: center;
-	position: relative;
-	top: 20%;
+.navbar li {
+	padding: 1rem 3rem;
+}
+
+.introduction {
+	display: flex;
+	align-items: center;
+	background: #EEEEEE;
+}
+.introduction div.container-lamp {
+	width: 50vw;
+	height: 60vh;
+	border: solid 1px black;
+}
+span.text-bold {
+	font-weight: 700;
+	font-size: 2.5rem;
 }
 
 p {
-	color: white;
-	text-align: center;
-	font-size: 26px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	padding-top: 220px;
-	
+	font-size: 1.5rem;
+	letter-spacing: 1px;
 } 
 
