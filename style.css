@@ -1,7 +1,5 @@
 body {
   font-family: 'Signika Negative', sans-serif;
-  width: 100%;
-  height: 100%;
   font-size: 10px;
   /*set margin to zero to avoid the white edge around*/
   margin: 0;
@@ -11,6 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
 	font-size: 1.1rem;
 	justify-content: flex-start;
@@ -20,15 +19,24 @@ body {
 .navbar li {
 	padding: 1rem 3rem;
 }
-
-
-/*pure css lamp*/
-.introduction {
-	background: rgb(0, 0, 0, 0.8);
-	width: 100%;
-	height: 50%;
+.navbar li a {
+	color: #666666;
+	text-decoration: none;	
 }
-.introduction div.wrapper {
+
+/*the hero section*/
+.hero {
+	/*can't use % for height*/
+	width: 100vw;
+	height: 50vh;
+	/*darken-overlay on the picture*/
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("computer.jpg");
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.hero div.wrapper {
 	background: none;
 	padding-top: 1rem;
 	padding-bottom: 5rem;
@@ -126,8 +134,7 @@ body {
   left: 0%;
   height: 2%;
   width: 100%;
-  background: #FFF69B;	
-  opacity: 0.7;
+  background: #FFF69B;
   border-radius: 50% 50% 0 0;
   box-shadow: 0px 5px 10px 5px #FFF69B,
     -5px 0px 5px 5px #FFF69B,
@@ -141,7 +148,7 @@ body {
 	}
 	100% {
 		background: #FFF69B;
-		opacity: 0.7;
+		/*opacity: 0.7;*/
 		box-shadow: 0px 5px 10px 5px #FFF69B,
     		-5px 0px 5px 5px #FFF69B,
     		5px 0px 5px 5px #FFF69B;	
@@ -149,12 +156,11 @@ body {
 }
 
 /*the text box on the right*/
-p.text-bold {
+div.text-bold {
 	font-weight: 700;
 	font-size: 5rem;
 	color: #FFFFFF;
 }
-
 span.code {
 	color: #FFF69B;
 }
@@ -163,8 +169,17 @@ span.therefore {
 	font-size: 3rem;
 }
 
-p {
-	font-size: 1.5rem;
-	letter-spacing: 1px;
-} 
+@media screen and (max-width: 750px) {
+	div.text-bold {
+		font-size: 2rem;
+	}
+	span.therefore {
+		font-size: 1.2rem;
+	}
+	.container-lamp {
+		width: 80px;
+		height: 100px;
+	}
+}
+
 
