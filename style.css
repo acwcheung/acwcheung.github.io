@@ -173,18 +173,21 @@ body {
   text-align: center;
 }
 .portfolio-container {
+  width: 85vw;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .project-container {
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .project-container p {
   font-size: 1.2rem;
-  margin: 0.2rem;
+  margin: 0.1rem;
 }
 .project-container p.project-title {
   font-size: 1.5rem;
@@ -197,8 +200,17 @@ body {
 .project-container div.screenshot {
   height: 250px;
   width: 350px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px lightgrey;
   background-size: cover;
   background-position: center;
+  transition: all 1s;
+}
+.project-container div.screenshot:hover {
+  transform: scale(1.1);
+}
+p.project-title {
+  padding: 10px 10px 0 10px;
 }
 .project-container div.todo {
   background-image: url("todo.png");
@@ -208,7 +220,13 @@ body {
 }
 .project-container div.flower {
   background-image: url("flower.png");
-} 
+}
+.project-container div.reactlist {
+  background-image: url("reactlist.png");
+}
+.project-container div.game {
+  background-image: url("game.png");
+}  
 
 div.text-bold {
 	font-weight: 700;
