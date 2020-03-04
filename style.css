@@ -212,22 +212,6 @@ body {
 p.project-title {
   padding: 10px 10px 0 10px;
 }
-.project-container div.todo {
-  background-image: url("todo.png");
-}
-.project-container div.clock {
-  background-image: url("clock.png");
-}
-.project-container div.flower {
-  background-image: url("flower.png");
-}
-.project-container div.reactlist {
-  background-image: url("reactlist.png");
-}
-.project-container div.game {
-  background-image: url("game.png");
-}  
-
 div.text-bold {
 	font-weight: 700;
 	font-size: 5rem;
