@@ -18,7 +18,7 @@ const projects = [
 		url: 'https://acwcheung.github.io/react-app/',
 		image: 'reactlist.png',
 		git: 'https://github.com/acwcheung/react-app',
-		tag: '#html #css #JavaScript'
+		tag: '#html #css #reactjs'
 	},
 	{
 		title: 'Tic-tac-toe game', 
