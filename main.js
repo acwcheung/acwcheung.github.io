@@ -28,6 +28,13 @@ const projects = [
 		tag: '#html #css #reactjs'
 	},
 	{
+		title: 'Pixel art maker', 
+		url: 'https://acwcheung.github.io/pixel-art/',
+		image: 'pixel.png',
+		git: 'https://github.com/acwcheung/pixel-art',
+		tag: '#html #css #JavaScript'
+	},
+	{
 		title: 'Weather app', 
 		url: 'https://acwcheung.github.io/weather-app/',
 		image: 'weather.png',
