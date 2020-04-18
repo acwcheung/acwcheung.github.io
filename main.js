@@ -45,8 +45,22 @@ const projects = [
 		title: 'Recipe app', 
 		url: 'https://acwcheung.github.io/recipe-app/',
 		image: 'recipe.png',
-		git: 'https://github.com/acwcheung/recipe-app',
-		tag: '#html #css #JavaScript #API'
+		git: 'https://github.com/acwcheung/flashcard',
+		tag: '#html #css #JavaScript #react #API'
+	},
+	/*{
+		title: 'Flash Cards', 
+		url: 'https://smart-brainnimage.herokuapp.com/',
+		image: 'face.png',
+		git: 'https://github.com/acwcheung/smartbrain',
+		tag: '#html #css #JavaScript #react #node #express #heroku'
+	},*/
+	{
+		title: 'Facial Recognition', 
+		url: 'https://smart-brainnimage.herokuapp.com/',
+		image: 'face.png',
+		git: 'https://github.com/acwcheung/smartbrain',
+		tag: '#html #css #JavaScript #react #node #express #heroku'
 	}
 
 ]
@@ -69,7 +83,7 @@ function display() {
               </svg>    
             </a>
           </p>
-          <p>${tag}</p>
+          <p class="tag">${tag}</p>
           
         </div>
 		`

@@ -165,6 +165,19 @@ body {
 	}
 }
 
+div.text-bold {
+  font-weight: 700;
+  font-size: 5rem;
+  color: #FFFFFF;
+}
+span.code {
+  color: #FFF69B;
+}
+span.therefore {
+  color: red;
+  font-size: 3rem;
+}
+
 /*portfolio section*/
 .section-head {
   font-weight: 700;
@@ -212,18 +225,12 @@ body {
 p.project-title {
   padding: 10px 10px 0 10px;
 }
-div.text-bold {
-	font-weight: 700;
-	font-size: 5rem;
-	color: #FFFFFF;
+p.tag {
+  width: 250px;
+  text-align: center;
 }
-span.code {
-	color: #FFF69B;
-}
-span.therefore {
-	color: red;
-	font-size: 3rem;
-}
+
+
 
 /*adjust style for smaller screen*/
 @media screen and (max-width: 750px) {
