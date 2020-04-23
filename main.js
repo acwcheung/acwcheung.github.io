@@ -77,7 +77,11 @@ function display() {
 	portfolio.innerHTML = projects.map(project => {
 		const { title, git, image, url, tag } = project;
 		return `
-		<div class="project-container" data-aos="zoom-in-up">
+		<div 
+		  class="project-container" 
+		  data-aos="zoom-in-up"
+		  data-aos-duration="1000"
+		>
           <a href=${url} target="_blank">
             <div 
             	class="screenshot" 
