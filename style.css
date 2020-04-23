@@ -201,6 +201,7 @@ section#about div.skills {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+
 section#about div.skills div.level {
   width: 100%;
   display: flex;
@@ -210,6 +211,11 @@ section#about div.skills div.level {
   border-bottom: 2px solid #333;
   border-radius: 0;
   margin-bottom: 0.5rem;
+}
+
+section#about div.skills div.legend {
+  width: 30%;
+  text-align: center;
 }
 section#about div.skills div {
   box-sizing: content-box;
@@ -300,8 +306,56 @@ i.fas, i.fab, i.far {
   font-size: 2rem;
   color: #fff;
 }
+section#contact p {
+  color: #ccc;
+  font-size: 0.8rem;
+  text-align: center;
+}
 
+/* loader */
+div.loader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+    width: 100%;
+    z-index: 100;
+    transition: opacity 0.5s linear;
+}
 
+div.loader {
+  width: 100%;
+  height: 100vh;
+  background: #fff;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.loader span {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #fff;  
+  margin: 0 0.3rem;
+  animation: bounce 0.6s infinite alternate;    
+}
+div.loader > span:nth-child(2) {
+  background-color: #ccc;
+  animation-delay: 0.2s;
+  border: none;
+} 
+div.loader > span:nth-child(3) {
+  background-color: #000;
+  animation-delay: 0.4s;
+}
+@keyframes bounce {
+  to {
+    width: 1rem;
+    height: 1rem;
+    transform: translate(0, 1rem);    
+  }
+}
 
 /* utilities */
 h1.section-head {
