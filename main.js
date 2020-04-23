@@ -1,5 +1,54 @@
 const projects = [
 	{
+		title: 'Tic-tac-toe game', 
+		url: 'https://acwcheung.github.io/X-game/',
+		image: 'game.png',
+		git: 'https://github.com/acwcheung/X-game',
+		tag: '#html #css #react'
+	},
+	{
+		title: 'Pixel art maker', 
+		url: 'https://acwcheung.github.io/pixel-art/',
+		image: 'pixel.png',
+		git: 'https://github.com/acwcheung/pixel-art',
+		tag: '#html #css #JavaScript'
+	},
+	{
+		title: 'Craft Chocolate', 
+		url: 'https://acwcheung.github.io/choco/',
+		image: 'choco.png',
+		git: 'https://github.com/acwcheung/choco',
+		tag: '#html #css #JavaScript'
+	},
+	{
+		title: 'Facial Recognition', 
+		url: 'https://smart-brainnimage.herokuapp.com/',
+		image: 'face.png',
+		git: 'https://github.com/acwcheung/smartbrain',
+		tag: '#html #css #JavaScript #react #node #express #heroku'
+	},
+	/*{
+		title: 'Flash Cards', 
+		url: 'https://smart-brainnimage.herokuapp.com/',
+		image: 'face.png',
+		git: 'https://github.com/acwcheung/smartbrain',
+		tag: '#html #css #JavaScript #react #node #express #heroku'
+	},*/
+	{
+		title: 'Weather app', 
+		url: 'https://acwcheung.github.io/weather-app/',
+		image: 'weather.png',
+		git: 'https://github.com/acwcheung/weather-app',
+		tag: '#html #css #JavaScript #API'
+	},
+	{
+		title: 'Recipe app', 
+		url: 'https://acwcheung.github.io/recipe-app/',
+		image: 'recipe.png',
+		git: 'https://github.com/acwcheung/flashcard',
+		tag: '#html #css #JavaScript #react #API'
+	},	
+	{
 		title: 'Pure CSS Flower', 
 		url: 'https://acwcheung.github.io/flower/',
 		image: 'flower.png',
@@ -18,49 +67,7 @@ const projects = [
 		url: 'https://acwcheung.github.io/react-app/',
 		image: 'reactlist.png',
 		git: 'https://github.com/acwcheung/react-app',
-		tag: '#html #css #reactjs'
-	},
-	{
-		title: 'Tic-tac-toe game', 
-		url: 'https://acwcheung.github.io/X-game/',
-		image: 'game.png',
-		git: 'https://github.com/acwcheung/X-game',
-		tag: '#html #css #reactjs'
-	},
-	{
-		title: 'Pixel art maker', 
-		url: 'https://acwcheung.github.io/pixel-art/',
-		image: 'pixel.png',
-		git: 'https://github.com/acwcheung/pixel-art',
-		tag: '#html #css #JavaScript'
-	},
-	{
-		title: 'Weather app', 
-		url: 'https://acwcheung.github.io/weather-app/',
-		image: 'weather.png',
-		git: 'https://github.com/acwcheung/weather-app',
-		tag: '#html #css #JavaScript #API'
-	},
-	{
-		title: 'Recipe app', 
-		url: 'https://acwcheung.github.io/recipe-app/',
-		image: 'recipe.png',
-		git: 'https://github.com/acwcheung/flashcard',
-		tag: '#html #css #JavaScript #react #API'
-	},
-	/*{
-		title: 'Flash Cards', 
-		url: 'https://smart-brainnimage.herokuapp.com/',
-		image: 'face.png',
-		git: 'https://github.com/acwcheung/smartbrain',
-		tag: '#html #css #JavaScript #react #node #express #heroku'
-	},*/
-	{
-		title: 'Facial Recognition', 
-		url: 'https://smart-brainnimage.herokuapp.com/',
-		image: 'face.png',
-		git: 'https://github.com/acwcheung/smartbrain',
-		tag: '#html #css #JavaScript #react #node #express #heroku'
+		tag: '#html #css #react'
 	}
 
 ]
@@ -70,7 +77,7 @@ function display() {
 	portfolio.innerHTML = projects.map(project => {
 		const { title, git, image, url, tag } = project;
 		return `
-		<div class="project-container">
+		<div class="project-container" data-aos="zoom-in-up">
           <a href=${url} target="_blank">
             <div 
             	class="screenshot" 

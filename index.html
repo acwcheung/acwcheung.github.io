@@ -5,51 +5,90 @@
     <title>Web Dev Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Signika+Negative:300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar" id="home">
       <ul>
         <li class="logo"><a href="#home">CODE</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#about">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>        
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <section>
-      <div class="hero">
-        <div class="wrapper text-bold">
-          <p>i <span class="code">C</span></p>
-          <div class="container-lamp">
-            <div class="lamp-head">
-              <div class="lamp-bulb"></div>
-            </div>
-            <div class="lamp-arm-top"></div>
-            <div class="lamp-arm-bottom"></div>
-            <div class="lamp-joint">
-              <div class="lamp-joint-center"></div>
-            </div>
-            <div class="lamp-stand"></div>
-            <div class="light"></div>
+
+    <section class="hero">      
+      <div class="wrapper text-bold">
+        <p>i <span class="code">C</span></p>
+        <div class="container-lamp">
+          <div class="lamp-head">
+            <div class="lamp-bulb"></div>
           </div>
-          <p><span class="code">DE</span>, <span class="therefore">therefore</span> i AM</p>
+          <div class="lamp-arm-top"></div>
+          <div class="lamp-arm-bottom"></div>
+          <div class="lamp-joint">
+            <div class="lamp-joint-center"></div>
+          </div>
+          <div class="lamp-stand"></div>
+          <div class="light"></div>
+        </div>
+        <p><span class="code">DE</span>, <span class="therefore">therefore</span> i AM</p>
+      </div>     
+    </section>
+    
+    <section id="about">
+      <h1 class="section-head">~about me~</h1>
+      <div class="about-wrapper">
+        <div class="bio" data-aos="fade-up">
+          <p>I am <span>Ashley</span>, a self-taught web developer. Previously in finance and investment, I started off with just one udemy course, which opens up to me a whole new world of technologies, online resources and coding community.</p>
+          <p>Coding empowers people to build things and solve problems. It teaches me how to break things down into smallest pieces and tackle them one by one with knowledge, logic and perservance.</p>          
+        </div>
+        <div class="skills">
+          <h3 class="section-subtitle">my skills</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>CSS Grid & Flexbox</li>
+            <li>Responsive design</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>GitHub & Git</li>
+            <li>Command line</li>
+            <li>NPM</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Postman</li>
+            <li>PostgreSQL</li>
+          </ul>              
         </div>
       </div>
+        
+      
     </section>
-    <section id="#portfolio">
-      <h1 class="section-head">~My Portfolio~</h1>
+
+    <section id="portfolio">
+      <h1 class="section-head">~my portfolio~</h1>
       <div class="portfolio-container"></div>      
     </section>
     
-    <section id="#about">
-      
-    </section>    
-
-
-    <section id="#contact">
+    <section id="contact">
+      <h1 class="section-head">~contact me~</h1>
+      <div class="container">
+        <a href="mailto:acwcheung1@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+        <a href="https://twitter.com/ashley40133519" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://github.com/acwcheung" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://codepen.io/acwcheung" target="_blank"><i class="fab fa-codepen"></i></a>
+        <a href="https://www.freecodecamp.org/fccc24840d2-377e-4a4b-a371-f225562b29ba" target="_blank"><i class="fab fa-free-code-camp"></i></a>                
+      </div>
       
     </section> 
 
-    <script type="text/javascript" src="main.js"></script>   
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://kit.fontawesome.com/93c1bd141c.js" crossorigin="anonymous"></script>   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     
     
