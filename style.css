@@ -312,6 +312,10 @@ section#contact p {
   font-size: 0.8rem;
   text-align: center;
 }
+section#contact {
+  margin-bottom: 0;
+}
+
 
 /* loader */
 div.loader-wrapper {
