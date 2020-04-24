@@ -189,6 +189,7 @@ section#about div.about-wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr;
   column-gap: 4rem;
+  align-items: flex-start;
 }
 
 section#about div.bio p {
@@ -406,9 +407,13 @@ section {
   section#about p {
     font-size: 1.2rem;
   }
-  section#about p span {
-  color: #FFF69B;
-  font-size: 1.5rem;
+  section#about div.about-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  section#contact div.container {
+    width: 80%;
+  }
 }
 
 
