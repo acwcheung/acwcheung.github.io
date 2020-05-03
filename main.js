@@ -37,13 +37,13 @@ const projects = [
 		git: 'https://github.com/acwcheung/smartbrain',
 		tag: '#html #css #JavaScript #react #node #express #heroku'
 	},
-	/*{
-		title: 'Flash Cards', 
-		url: 'https://smart-brainnimage.herokuapp.com/',
-		image: 'face.png',
-		git: 'https://github.com/acwcheung/smartbrain',
-		tag: '#html #css #JavaScript #react #node #express #heroku'
-	},*/
+	{
+		title: 'Movie Plus', 
+		url: 'https://movie-plus.herokuapp.com/',
+		image: 'movie.png',
+		git: 'https://github.com/acwcheung/movieplus',
+		tag: '#html #css #JavaScript #react #heroku'
+	},
 	{
 		title: 'Weather app', 
 		url: 'https://acwcheung.github.io/weather-app/',
